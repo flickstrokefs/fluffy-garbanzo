@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card"
 import { Newspaper, Users, Map, BookOpen, ArrowRight, MessageCircle } from "lucide-react"
 import Link from "next/link"
+import { PerformanceTracker } from "@/components/performance-tracker"
 
 const features = [
   {
@@ -48,6 +49,9 @@ export default function DashboardPage() {
         <h1 className="text-3xl font-bold tracking-tight font-headline">Welcome, Student!</h1>
         <p className="text-muted-foreground">Here's your campus companion overview.</p>
       </div>
+
+      <PerformanceTracker />
+
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (
           <Link href={feature.href} key={feature.title} className="group">
