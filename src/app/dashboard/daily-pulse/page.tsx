@@ -1,3 +1,4 @@
+
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -48,21 +49,21 @@ export default function DailyPulsePage() {
                 <TableHeader>
                   <TableRow>
                     <TableHead>Meal</TableHead>
-                    <TableHead>Menu</TableHead>
+                    <TableHead>Menu (with Calories)</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
                     <TableCell className="font-medium">Breakfast</TableCell>
-                    <TableCell>{messMenu.breakfast}</TableCell>
+                    <TableCell>{messMenu.breakfast.map(i => `${i.item} (${i.calories} kcal)`).join(', ')}</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Lunch</TableCell>
-                    <TableCell>{messMenu.lunch}</TableCell>
+                    <TableCell>{messMenu.lunch.map(i => `${i.item} (${i.calories} kcal)`).join(', ')}</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Dinner</TableCell>
-                    <TableCell>{messMenu.dinner}</TableCell>
+                    <TableCell>{messMenu.dinner.map(i => `${i.item} (${i.calories} kcal)`).join(', ')}</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

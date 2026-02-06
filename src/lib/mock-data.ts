@@ -1,7 +1,25 @@
+
 export const messMenu = {
-  breakfast: "Poha, Jalebi, Tea, Coffee",
-  lunch: "Roti, Rice, Dal Makhani, Mix Veg, Salad",
-  dinner: "Paneer Butter Masala, Roti, Rice, Dal Fry, Gulab Jamun",
+  breakfast: [
+    { item: "Poha", calories: 250 },
+    { item: "Jalebi", calories: 150 },
+    { item: "Tea", calories: 30 },
+    { item: "Coffee", calories: 30 },
+  ],
+  lunch: [
+    { item: "Roti", calories: 120 },
+    { item: "Rice", calories: 200 },
+    { item: "Dal Makhani", calories: 300 },
+    { item: "Mix Veg", calories: 150 },
+    { item: "Salad", calories: 50 },
+  ],
+  dinner: [
+    { item: "Paneer Butter Masala", calories: 400 },
+    { item: "Roti", calories: 120 },
+    { item: "Rice", calories: 200 },
+    { item: "Dal Fry", calories: 250 },
+    { item: "Gulab Jamun", calories: 200 },
+  ],
 };
 
 export const mails = [
