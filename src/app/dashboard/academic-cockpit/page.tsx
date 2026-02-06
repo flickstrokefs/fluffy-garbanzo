@@ -2,9 +2,10 @@ import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Progress } from "@/components/ui/progress";
-import { assignments, courses, timetable } from "@/lib/mock-data";
+import { assignments, courses } from "@/lib/mock-data";
 import { PerformanceChart } from "@/components/performance-chart";
 import { SummarizeAssignmentAction } from "@/components/ai/summarize-assignment-action";
+import { CustomizableTimetable } from "@/components/customizable-timetable";
 
 export default function AcademicCockpitPage() {
   return (
@@ -53,30 +54,7 @@ export default function AcademicCockpitPage() {
           </Card>
         </TabsContent>
         <TabsContent value="timetable">
-          <Card>
-            <CardHeader>
-              <CardTitle className="font-headline">Weekly Timetable</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid gap-4 md:grid-cols-2">
-                {Object.entries(timetable).map(([day, classes]) => (
-                  <div key={day}>
-                    <h3 className="font-semibold capitalize mb-2">{day}</h3>
-                    {classes.length > 0 ? (
-                      <div className="space-y-2">
-                      {classes.map((c, i) => (
-                        <div key={i} className="p-2 bg-accent/50 rounded-md text-sm">
-                          <p className="font-medium">{c.time}: {c.course}</p>
-                          <p className="text-muted-foreground">{c.location}</p>
-                        </div>
-                      ))}
-                      </div>
-                    ) : <p className="text-sm text-muted-foreground">No classes scheduled.</p>}
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+          <CustomizableTimetable />
         </TabsContent>
         <TabsContent value="courses">
           <div className="grid gap-4 md:grid-cols-2">

@@ -24,12 +24,20 @@ export const announcements = [
     id: 1,
     title: "Annual Tech Fest 'Innovate 2024'",
     summary: "Get ready for the biggest tech fest of the year. Registrations are now open for all events.",
+    category: "Events",
   },
   {
     id: 2,
     title: "Library Closure",
     summary: "The central library will be closed this weekend for maintenance work.",
+    category: "General",
   },
+  {
+    id: 3,
+    title: "Mid-term Examination Schedule",
+    summary: "The mid-term examination schedule for all branches has been released on the university website.",
+    category: "Academic",
+  }
 ];
 
 export const lostAndFoundItems = [
@@ -58,7 +66,7 @@ export const nearbyPlaces = [
   { id: 2, name: "City Central Library", category: "Library", distance: "1.2km", imageId: "nearby-place-2" },
 ];
 
-export const timetable = {
+export const timetable: { [key: string]: { time: string; course: string; location: string }[] } = {
   monday: [
     { time: "09:00 - 10:00", course: "Data Structures", location: "Room 101" },
     { time: "10:00 - 11:00", course: "Algorithms", location: "Room 102" },
@@ -66,6 +74,15 @@ export const timetable = {
   tuesday: [
     { time: "11:00 - 12:00", course: "Database Systems", location: "Lab 3" },
   ],
+  wednesday: [],
+  thursday: [
+    { time: "09:00 - 10:00", course: "Data Structures", location: "Room 101" },
+  ],
+  friday: [
+     { time: "11:00 - 12:00", course: "Database Systems", location: "Lab 3" },
+  ],
+  saturday: [],
+  sunday: [],
 };
 
 export const courses = [
