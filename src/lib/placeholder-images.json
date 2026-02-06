@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "user-avatar",
+      "description": "User avatar",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb258ZW58MHx8fHwxNzcwMzI3MzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person"
+    },
+    {
+      "id": "marketplace-item-1",
+      "description": "A used bicycle for sale",
+      "imageUrl": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiaWN5Y2xlfGVufDB8fHx8MTc3MDMwNzQwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bicycle"
+    },
+    {
+      "id": "marketplace-item-2",
+      "description": "A stack of textbooks",
+      "imageUrl": "https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib29rc3xlbnwwfHx8fDE3NzAyODI5MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "books"
+    },
+    {
+      "id": "marketplace-item-3",
+      "description": "A mini-fridge",
+      "imageUrl": "https://images.unsplash.com/photo-1606859191214-25806e8e2423?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmlkZ2V8ZW58MHx8fHwxNzcwMzc3NTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fridge"
+    },
+    {
+      "id": "nearby-place-1",
+      "description": "A local coffee shop",
+      "imageUrl": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc3MDI4MjAyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee shop"
+    },
+    {
+      "id": "nearby-place-2",
+      "description": "A library",
+      "imageUrl": "https://images.unsplash.com/photo-1568667256549-094345857637?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsaWJyYXJ5fGVufDB8fHx8MTc3MDMzMTIzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "library"
+    },
+    {
+      "id": "course-thumbnail",
+      "description": "A generic course thumbnail",
+      "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlZHVjYXRpb258ZW58MHx8fHwxNzcwMzc3NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "education"
+    }
+  ]
 }
