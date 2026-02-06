@@ -6,3 +6,4 @@ import '@/ai/flows/suggest-community-posts.ts';
 import '@/ai/flows/smart-navigation-suggestions.ts';
 import '@/ai/flows/summarize-daily-pulse.ts';
 import '@/ai/flows/summarize-mails.ts';
+import '@/ai/flows/student-chatbot.ts';

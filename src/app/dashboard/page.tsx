@@ -5,7 +5,7 @@ import {
   CardTitle,
   CardDescription
 } from "@/components/ui/card"
-import { Newspaper, Users, Map, BookOpen, ArrowRight } from "lucide-react"
+import { Newspaper, Users, Map, BookOpen, ArrowRight, MessageCircle } from "lucide-react"
 import Link from "next/link"
 
 const features = [
@@ -33,6 +33,12 @@ const features = [
     href: "/dashboard/academic-cockpit",
     icon: <BookOpen className="w-8 h-8 text-primary" />,
   },
+  {
+    title: "Campus Assistant",
+    description: "Your conversational guide to campus.",
+    href: "/dashboard/chatbot",
+    icon: <MessageCircle className="w-8 h-8 text-primary" />,
+  },
 ]
 
 export default function DashboardPage() {
@@ -42,7 +48,7 @@ export default function DashboardPage() {
         <h1 className="text-3xl font-bold tracking-tight font-headline">Welcome, Student!</h1>
         <p className="text-muted-foreground">Here's your campus companion overview.</p>
       </div>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (
           <Link href={feature.href} key={feature.title} className="group">
             <Card className="hover:border-primary hover:shadow-lg transition-all h-full flex flex-col">
