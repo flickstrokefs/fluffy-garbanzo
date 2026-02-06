@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Newspaper, Users, Map, BookOpen, MessageCircle, Smile } from 'lucide-react';
+import { Home, Newspaper, Users, Map, BookOpen, MessageCircle, Smile, Siren } from 'lucide-react';
 import {
   SidebarMenu,
   SidebarMenuItem,
@@ -17,6 +17,7 @@ const links = [
   { href: '/dashboard/academic-cockpit', label: 'Academic Cockpit', icon: BookOpen },
   { href: '/dashboard/chatbot', label: 'Campus Assistant', icon: MessageCircle },
   { href: '/dashboard/mental-wellbeing', label: 'Wellbeing Check', icon: Smile },
+  { href: '/dashboard/emergency', label: 'Emergency SOS', icon: Siren },
 ];
 
 export function Nav() {

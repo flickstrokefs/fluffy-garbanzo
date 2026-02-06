@@ -94,3 +94,9 @@ export const assignments = [
   { id: 1, course: "Data Structures", title: "Implement a Red-Black Tree", dueDate: "2024-11-15", details: "Implement insertion, deletion, and search operations for a Red-Black Tree in C++ or Java. The implementation should be well-documented and tested. Submission should be a zip file containing the source code and a report." },
   { id: 2, course: "Linear Algebra", title: "Problem Set 5", dueDate: "2024-11-10", details: "Solve the problems from Chapter 5 of the textbook. The problems focus on eigenvalues and eigenvectors. Show all steps clearly. Submit a scanned PDF of your handwritten solutions." },
 ];
+
+export const emergencyContacts = [
+  { id: 1, name: "Campus Security", phone: "123-456-7890", type: "Security" },
+  { id: 2, name: "Health Center", phone: "098-765-4321", type: "Medical" },
+  { id: 3, name: "Student Counseling", phone: "555-555-5555", type: "Counseling" },
+];

@@ -5,7 +5,7 @@ import {
   CardTitle,
   CardDescription
 } from "@/components/ui/card"
-import { Newspaper, Users, Map, BookOpen, ArrowRight, MessageCircle, Smile } from "lucide-react"
+import { Newspaper, Users, Map, BookOpen, ArrowRight, MessageCircle, Smile, Siren } from "lucide-react"
 import Link from "next/link"
 import { PerformanceTracker } from "@/components/performance-tracker"
 
@@ -45,6 +45,12 @@ const features = [
     description: "A quiz for your mental and emotional health.",
     href: "/dashboard/mental-wellbeing",
     icon: <Smile className="w-8 h-8 text-primary" />,
+  },
+  {
+    title: "Emergency SOS",
+    description: "Access emergency contacts and an SOS system.",
+    href: "/dashboard/emergency",
+    icon: <Siren className="w-8 h-8 text-primary" />,
   },
 ]
 
